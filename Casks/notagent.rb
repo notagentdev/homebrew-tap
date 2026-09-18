@@ -1,6 +1,6 @@
 cask "notagent" do
-  version "0.1.54"
-  sha256 "d599e0eca0d8cfb0b97cc379642003a1507b46abe2695cebcbec659e4ace0b1c"
+  version "0.1.55"
+  sha256 "4f95ff49be39ee142c6f6bca5ff4a72b23f1b773911f92b0a975e452082f7dea"
 
   url "https://github.com/notagentdev/notagent/releases/download/v#{version}/notagent-v#{version}-aarch64-apple-darwin.tar.gz"
   name "notagent"
@@ -8,10 +8,8 @@ cask "notagent" do
   homepage "https://notagent.dev/"
 
   livecheck do
-    url "https://notagent.dev/api/latest-version.json"
-    strategy :json do |json|
-      json["version"]
-    end
+    url "https://github.com/notagentdev/notagent"
+    strategy :github_latest
   end
 
   depends_on arch: :arm64
