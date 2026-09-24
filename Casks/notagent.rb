@@ -1,6 +1,6 @@
 cask "notagent" do
-  version "0.1.58"
-  sha256 "c3e3d7a756f0dad4443971053d9133384f325d36a77c2a172e5f706f6fb52d2e"
+  version "0.1.59"
+  sha256 "977081cbce98ddddc4e5aa414e961be3853b9dc11b0851b23deb489d0aee3dc4"
 
   url "https://github.com/notagentdev/notagent/releases/download/v#{version}/notagent-v#{version}-aarch64-apple-darwin.tar.gz"
   name "notagent"
